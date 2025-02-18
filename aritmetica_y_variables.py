@@ -98,3 +98,48 @@ print(type(mi_lista))
 mi_lista.append(mi_booleano)
 print(mi_lista)
 print(mi_lista[0])
+
+mi_diccionario = {"string":mi_string, "int": mi_entero, "float":mi_flotante}
+print(type(mi_diccionario))
+print(mi_diccionario["int"])
+
+miset = {mi_string, mi_entero,mi_flotante, mi_booleano}
+print(type(miset))
+print(miset)
+
+mitupla = (mi_string, mi_entero,mi_flotante,mi_booleano,mi_booleano)
+print(type(mitupla))
+print(mitupla)
+
+#condicionales
+if mi_entero == 11 or mi_booleano == True:
+    print("El valor es 11")
+elif mi_entero == 12:
+    print("El valor es 12")
+else:
+    print("El valor no es ni 11 ni 12")
+    
+for miItem in mi_lista:
+    print(miItem)
+    
+for miItem in range(10):
+    print(miItem)
+    
+def mi_funcion_con_retorno(param):
+    return param + 5
+
+mi_retorno = mi_funcion_con_retorno(4)
+print(mi_retorno)
+
+class MiClase:
+    def __init__(self, mi_nombre):
+        self.mi_nombre = mi_nombre
+        
+    def print_name(self):
+        print(self.mi_nombre)
+        
+mi_clase = MiClase("Carlitos")
+mi_clase.print_name()
+mi_clase.mi_nombre = "Aruhiza"
+print(type(mi_clase))
+print(mi_clase.mi_nombre)
