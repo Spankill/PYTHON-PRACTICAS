@@ -1,5 +1,6 @@
 print("Hola mundillo")
 
+
 print(1+2)   #suma
 
 print(9-5)  #resta
@@ -60,3 +61,40 @@ mins_per_hour = 60
 
 births_per_day = births_per_min * mins_per_hour * hours_per_day 
 print(births_per_day)
+
+
+#cadenas
+mi_string = "cadenita de texto"
+mi_string = "nuevo texto"
+print(type(mi_string))
+print(mi_string)
+
+mi_string = 6
+print(type(mi_string))
+print(mi_string)
+
+mi_entero = 5
+mi_entero = (mi_entero + 5)
+
+print(mi_entero)
+
+
+mi_flotante = 5.15
+mi_flotante = (mi_flotante + 3.5)
+
+print(mi_flotante)
+
+
+mi_booleano = True
+mi_booleano = False
+print(type(mi_booleano))
+print(mi_booleano)
+
+print("el valor de mi entero es " + str(mi_entero) + "y el de mi_booleano " + str(mi_booleano))
+print(f"el valor de mi entero es {mi_entero} y el de mi booleano es {mi_booleano}")
+
+mi_lista = [mi_string, mi_entero, mi_flotante, mi_booleano]
+print(type(mi_lista))
+mi_lista.append(mi_booleano)
+print(mi_lista)
+print(mi_lista[0])
