@@ -51,3 +51,12 @@ totalSegundos = segundos_por_minuto * minutos_por_hora * horas_por_dia * dias_po
 print(totalSegundos)
 
 print(segundos_por_minuto)
+
+
+#calcular el numer ode nacimientos de cada dia
+births_per_min = 250
+hours_per_day = 24
+mins_per_hour = 60
+
+births_per_day = births_per_min * mins_per_hour * hours_per_day 
+print(births_per_day)
